@@ -1,0 +1,66 @@
+.header-div {
+    justify-content: center;
+    position: relative;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+.categories {
+    gap: 1.5rem;
+    position: absolute;
+    left: 25%;
+    cursor: default;
+}
+
+.location {
+    gap: 0.5rem;
+    position: absolute;
+    left: 0;
+}
+
+.location svg {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .header-div {
+        flex-direction: column;
+        position: static;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .location svg {
+        font-size: 0.8rem;
+    }
+
+    .categories {
+        position: static;
+        margin-top: 1.5rem;
+    }
+
+    .location {
+        width: 100%;
+        position: static;
+    }
+
+    .location {
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .categories::-webkit-scrollbar {
+        display: none;
+    }
+
+    .categories {
+        width: 100%;
+        justify-content: space-between;
+        white-space: nowrap;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}

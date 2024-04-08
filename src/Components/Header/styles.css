@@ -1,0 +1,14 @@
+header {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 4rem);
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        display: flex;
+        justify-content: center;
+        width: calc(1000px - 4%);
+    }
+}

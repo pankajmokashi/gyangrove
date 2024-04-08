@@ -1,0 +1,134 @@
+.body {
+    width: 100%;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    /* min-height: 700px; */
+    min-height: calc(100vw - 100px);
+    background-image: url("../../../public/Banner.svg");
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: relative;
+}
+
+.text {
+    margin: 4rem;
+    width: calc(100% - 8rem);
+    text-align: center;
+    position: absolute;
+    top: 15%;
+}
+
+.heading {
+    font-size: 3.5rem;
+    color: white
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+.container {
+    position: absolute;
+    top: 75%;
+    margin-left: 4rem;
+    width: calc(100% - 4rem);
+}
+
+@media screen and (min-width: 1000px) {
+    .body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .banner {
+        min-height: 700px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .heading {
+        font-size: 2.4rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text {
+        margin: 3rem;
+        width: calc(100% - 6rem);
+    }
+
+    .heading {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        min-height: 100vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text {
+        top: 10%;
+    }
+
+    .heading {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text {
+        top: 5%;
+    }
+
+    .container {
+        top: 65%;
+    }
+
+    .banner {
+        min-height: calc(100vw + 100px);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        margin-left: 2rem;
+        width: calc(100% - 2rem);
+    }
+
+    .heading {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .heading {
+        font-size: 1rem;
+    }
+
+    .subtitle {
+        display: none;
+    }
+}
