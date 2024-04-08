@@ -32,7 +32,7 @@ function Events() {
     const handleScroll = () => {
       const { scrollHeight, scrollTop, clientHeight } = divRef.current;
 
-      if (scrollHeight - scrollTop <= clientHeight) {
+      if (scrollHeight - scrollTop <= clientHeight + 1) {
         const fetchEvents = async () => {
           if (page <= totalPage) {
             try {
