@@ -23,7 +23,7 @@
 
 ### Upcoming events:
 - There are several upcoming events which scroll vertically as shown in the image. You can fetch the upcoming events by calling this API. 
-- https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&page=1&type=upcoming
+    - https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&page=1&type=upcoming
 
 ---
 
